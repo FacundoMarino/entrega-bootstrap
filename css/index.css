@@ -1,0 +1,169 @@
+/*Normalize*/
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/*Variables*/
+:root{
+--principal: #868686;
+--secundary: #fff;
+--font-primary: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*Globals*/
+
+.row{
+    align-items: center;
+    margin-right: 1px;
+    margin-left: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+html{
+
+    /*font-size: 62.5%;*/
+    font-family: var(--font-primary);
+    background: #E0EAFC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 0fr auto auto;
+    background-color: transparent!important;
+    font-size: 62.5%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--principal);   
+}
+
+#footer__div{
+    align-items: center;
+}
+
+#parrafo{
+    font-size: 2.1em;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+    align-content: center;
+}
+
+ h1{
+    font-size: 3.6em;
+    font-family: var(--font-primary);
+    color: var(--principal);  
+    margin: 20px;
+    text-align: center;
+    font-weight: bold;
+    padding: 30px;
+}
+
+#navbarNav{
+    display: flex!important;
+    flex-basis: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 2em;
+    align-content: center;
+    flex-direction: row-reverse;
+    padding: 40px;
+    margin: 20px;
+}
+
+#logo{
+    width: 45%;
+}
+
+#banner img{
+    width: 80vh;
+    padding: 20px;
+}
+
+footer div img{
+    border-radius: 50px;
+    align-items:  center;
+}
+
+footer div{
+    flex-wrap: wrap;
+}
+
+ picture img{
+margin: 20px;
+}
+
+#parrafo_p{
+    font-size: 2em;
+    padding: 2px;    
+}
+
+/*Carousel*/
+
+.carousel-inner img {
+    width: 100%;
+    max-height: 460px;
+}
+
+.carousel-inner{
+    width: 100%;
+    height: 500px;
+}
+
+
+/*FORM*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400);
+form{
+  padding: 60px;
+  max-width: 400px;
+  background-color: transparent;
+  margin: 0 auto;
+}
+
+form input, form textarea{
+  margin-bottom: 15px;
+  font-family: var(--font-primary);
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box; 
+  border: none; 
+  color: #525c66; 
+  font-size: 1em;
+  resize: none; 
+}
+
+label{
+    font-size: 1em;
+}
+
+form button {
+	display: block;
+	background-color: #0095eb;
+	padding: 10px 45px 10px 45px;
+	border: 0;
+	font-size: 1em; 
+	color: 	white;
+  font-family: "Roboto", sans-serif;
+}
+form button:hover{
+	background-color: #046193;
+}
+textarea {  resize: none;}
